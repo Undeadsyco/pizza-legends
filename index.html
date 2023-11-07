@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Legends</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #333;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .game-container {
+      position: relative;
+      width: 352px;
+      height: 198px;
+      outline: 1px solid white;
+      margin: 0 auto;
+
+      transform: scale(3) translateY(50%);
+    }
+
+    .game-canvas {
+      image-rendering: pixelated;
+    }
+  </style>
+</head>
+<body>
+  <div class="game-container">
+    <canvas class="game-canvas" width="352" height="198"></canvas>
+  </div>
+
+  <!-- Dependency Scripts -->
+  <script src="./src/utils/types.js"></script>
+  <script src="./src/utils/index.js"></script>
+  <script src="./src/classes/gameObjects/GameObject.js"></script>
+  <script src="./src/classes/gameObjects/Sprite.js"></script>
+  <script src="./src/classes/gameObjects/sprites/Person.js"></script>
+  <script src="./src/classes/world/DirectionManager.js"></script>
+  <script src="./src/classes/world/OverWorldMap.js"></script>
+  <script src="./src/classes/world/OverWorld.js"></script>
+  <!-- Init Script -->
+  <script src="./src/index.js"></script>
+</body>
+</html>
